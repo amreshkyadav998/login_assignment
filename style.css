@@ -83,7 +83,9 @@ header .logo {
 header .logo img {
     width: 40px;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the element circular */
+    border: 1px solid green; 
+    height: 40px;
     background-color: #fff;
 }
 header .logo span{
