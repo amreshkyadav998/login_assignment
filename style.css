@@ -1,0 +1,322 @@
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #235623;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    gap: 10px;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.banner, .login-box {
+    border-radius: 20px;
+}
+
+.banner {
+    width: 50%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.login-box {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+header .logo span{
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+header .cta a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a6a2a;
+    border: 2px solid #2a6a2a;
+    padding: 6px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+header .cta a:hover {
+    background-color: #2a6a2a;
+    color: white;
+}
+
+.enroll-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    margin-top: 5px;
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    z-index: 10;
+}
+
+.enroll-now:hover + .enroll-content {
+    display: block;
+}
+
+.enroll-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.enroll-content li {
+    padding: 10px 0;
+    font-size: 16px;
+    position: relative;
+}
+
+.enroll-content li::before {
+    content: "✔️";
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: -25px;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2a6a2a;
+    font-size: 24px;
+}
+
+.login-box p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #2a6a2a;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #2a6a2a;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a6a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #235623;
+}
+
+.form-footer {
+    text-align: center;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: green;
+    font-size: 12px;
+    gap: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+#right{
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .banner, .login-box {
+        width: 100%;
+    }
+
+    .login-box {
+        padding: 15px;
+    }
+
+    header .cta a {
+        padding: 2px 3px;
+    }
+
+    .login-box h1 {
+        font-size: 20px;
+    }
+
+    .login-box p {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+        padding: 0 4px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .enroll-content {
+        left: 50%;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width:100px) and (max-width: 400px) {
+    .enroll-content {
+        left: 50%;
+        width: 100%;
+        width: 200px;
+        padding-right: 30px;
+    }
+}

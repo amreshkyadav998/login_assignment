@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form Section -->
+        <div class="login-box">
+            <!-- Header Section -->
+            
+            <header>
+                <div class="logo">
+                    <img src="/assets/logo.jpg" alt="Regions Mortgage">
+                    <span>REGIONS Mortgage</span>
+                </div>
+                <p>Are you a new customer?</p>
+                <div class="cta">
+                    <a href="#" class="enroll-now" id="enrollBtn">Enroll Now</a>
+                </div>
+        
+                <div class="enroll-content" id="enrollContent" style="display: none;">
+                    <ul>
+                        <li>Access your loans online</li>
+                        <li>Pay your mortgage online</li>
+                        <li>View your mortgage statements</li>
+                    </ul>
+                </div>
+            </header>
+            
+            
+            
+            <!-- Login Form -->
+            <h1>Welcome Back</h1>
+            <p>Sign in to your Regions MyMortgage account.</p>
+            
+            <form id="loginForm" action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" id="onlineID" placeholder="Online ID" required>
+                    <label for="onlineID">Online ID</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <label for="password">Password</label>
+                    <span class="toggle-password" onclick="togglePassword()">Show</span>
+                </div>
+            
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+            
+                <button type="submit" class="login-btn">Login</button>
+            
+                <div class="form-footer">
+                    <a href="#">Forgot Online ID?</a> - 
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+            
+
+            <!-- Footer Section -->
+            <footer>
+                <p id="right">©2023 Regions Financial Corporation. All Rights Reserved.</p>
+                <p id="right">Equal Housing Lender. Member FDIC.</p>
+            </footer>
+        </div>
+        <!-- Banner Section -->
+        <div class="banner">
+            <img src="./assets/banner1.jpg" alt="Banner">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
